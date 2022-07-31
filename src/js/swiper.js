@@ -5,7 +5,12 @@ export const swiper =
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// let leftArrow = document.querySelector(".prev")
+document.querySelector(".prev").addEventListener("click", () => {
+    plusSlides(-1)
+});
+document.querySelector(".next").addEventListener("click", () => {
+    plusSlides(-1)
+});
 
 function plusSlides(n) {
     showSlides(slideIndex += n);
@@ -14,7 +19,6 @@ function plusSlides(n) {
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
-console.log("zdfgzDFHzfdh")
 
 function showSlides(n) {
     let i;
@@ -27,6 +31,9 @@ function showSlides(n) {
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
+        dots[0].addEventListener("click", () => {currentSlide(1)})
+        dots[1].addEventListener("click", () => {currentSlide(2)})
+        dots[2].addEventListener("click", () => {currentSlide(3)})
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
