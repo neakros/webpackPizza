@@ -12,15 +12,22 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  .active_header {
+    color: rgb(242,200,96);
+  }
   img {
     cursor: pointer;
   }
-  a {
+   a {
     color: rgb(178,171,159);
-    &:hover{
+     &:hover{
       color: rgb(242,200,96);
     }
   }
+}
+
+.active_header {
+  color: rgb(242,200,96);
 }
 
 li {

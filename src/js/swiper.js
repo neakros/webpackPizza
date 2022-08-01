@@ -2,6 +2,8 @@ export const swiper =
     () => `Sensible webpack 5 boilerplate using Babel and PostCSS with a hot dev server 
   and an optimized production build.`
 let bg = document.querySelector(".swiper_wrapper");
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("wrapper_dot");
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -12,8 +14,6 @@ function currentSlide(n) {
 
 function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
