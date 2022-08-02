@@ -1,0 +1,93 @@
+.wrapper_pricing {
+  background: url("../assets/bg_4.jpg");
+  font-family: 'Poppins';
+  text-align: center;
+  padding-bottom: 100px;
+  h1 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+    text-transform: uppercase;
+  }
+  p {
+    padding-top: 20px;
+    color: rgb(109,109,109)
+  }
+}
+
+.pricing_content {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header_pricing {
+  padding: 100px 0;
+}
+
+.footer_pricing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricing_diamond_wrapper {
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    width: 70px;
+    height: 2px;
+    background-color: rgb(125,84,9);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    background-color: rgb(125,84,9);
+    width: 70px;
+    height: 2px;
+  }
+  .midl_img {
+    position: relative;
+    width: 25px;
+    height: 20px;
+  }
+  .side_img {
+    width: 20px;
+    height: 15px;
+  }
+}
+
+.footer_left, .footer_right {
+  display: flex;
+  flex-direction: column;
+  &>div {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  img {
+    object-fit:cover;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+  }
+  p {
+    padding: 10px 0;
+  }
+}
+
+.prise_pricing {
+  display: flex;
+  justify-content: space-between;
+  h3 {
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 200;
+  }
+  span {
+    color: rgb(250,197,100);
+  }
+}
