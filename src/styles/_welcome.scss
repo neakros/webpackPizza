@@ -53,6 +53,9 @@
 
 .about {
   background: url("../assets/bg_4.jpg");
+  img {
+    width: 100%;
+  }
   .about_text {
     display: flex;
     flex-direction: column;
